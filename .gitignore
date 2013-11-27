@@ -1,0 +1,5 @@
+# Created by http://gitignore.io
+
+### SASS ###
+### SASS Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache
