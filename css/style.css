@@ -55,3 +55,8 @@ section {
 .nav .navbar-nav .navbar-right li a:hover{
 	background-color: black;
 }
+
+.navbar-brand img{
+	width: 20%;
+	height: auto;
+}
