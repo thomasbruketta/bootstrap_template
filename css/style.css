@@ -1,0 +1,44 @@
+p,
+ul,
+ol {
+	line-height: 1.6em;
+	margin-bottom: 1em;	
+}
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+h1:first-child,
+h2:first-child {
+	margin-top: 0;
+}
+
+p:last-child,
+ul:last-child,
+ol:last-child,
+h1:last-child,
+h2:last-child {
+	margin-bottom: 0;
+}
+
+footer {
+	background-color:#5e5f5c;
+	color:#FFF;	
+	padding:10px 0;
+	
+}
+
+section {
+	padding:20px 0;
+}
+
+.callouts{
+	text-align: center
+	
+}
+
+/* > symbol allows you to select one level down */
+.callouts h2 > .glyphicon.glyphicon-heart{
+	color:#FF0000
+	
+}
