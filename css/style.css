@@ -42,3 +42,16 @@ section {
 	color:#FF0000
 	
 }
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-brand {
+	padding-left: 0
+}
+
+.nav .navbar-nav .navbar-right li a:hover{
+	background-color: black;
+}
