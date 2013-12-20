@@ -137,17 +137,10 @@ section {
 .callouts {
   text-align: center;
 }
-.callouts h2 > .glyphicon.glyphicon-heart {
-  color: red;
-}
 
 .navbar-default {
   background-color: transparent;
   border: none;
-}
-.navbar-default .navbar-nav > li > a:hover {
-  background-color: blue;
-  text-transform: uppercase;
 }
 
 .navbar-brand {
@@ -157,4 +150,13 @@ section {
 .navbar-brand img {
   width: 20%;
   height: auto;
+}
+
+.center-image {
+  background-image: url(../images/portrait.jpg);
+  background-position: 50% 100%;
+  /*	height: 30px;
+  	width: 30px;
+  	margin-left: auto;
+  	margin-right: auto; */
 }
