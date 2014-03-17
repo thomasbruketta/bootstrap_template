@@ -119,4 +119,75 @@ section {
 }
 section img {
   width: 100%;
+  height: auto;
 }
+
+.col1, .col2 {
+  min-height: 1px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 15px;
+  float: left;
+  clear: both;
+}
+@media (min-width: 768px) {
+  .col1, .col2 {
+    width: 50%;
+    padding: 0 15px 15px 0;
+  }
+}
+@media (min-width: 992px) {
+  .col1, .col2 {
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col2 {
+    width: 50%;
+    padding: 0 15px 15px 0;
+  }
+}
+@media (min-width: 992px) {
+  .col2 {
+    width: 66.666666666%;
+  }
+}
+
+/*#isotope-container {
+	overflow: hidden;
+	position: relative;
+	img {
+		padding: 0 10px 10px 0;
+		box-sizing: border-box; 
+	//	width: 100%;
+		$grid-unit: 190px;
+		&.thumb {
+			@include breakpoint(reader){
+				width: $grid-unit;
+				height: $grid-unit;
+			}	
+		}
+		&.sm {
+			@include breakpoint(reader){
+				width: $grid-unit * 2;
+			}
+		}
+		&.md {
+			@include breakpoint(reader){
+				width: $grid-unit * 3;
+			}
+		} 
+		&.lg {
+			@include breakpoint(reader){
+				width: $grid-unit * 4;
+			}
+		}
+		&.full {
+			@include breakpoint(reader){
+				width: $grid-unit * 6;
+			}
+		}
+	}
+
+}*/
