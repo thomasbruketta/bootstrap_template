@@ -109,17 +109,89 @@ h2:last-child {
 }
 
 footer {
-  background-color: #5e5f5c;
+  background-color: #d3c3b4;
   color: #FFF;
   padding: 10px 0;
 }
 
+.navbar-default {
+  background-color: rgba(248, 248, 248, 0.8);
+  border: none;
+  border-radius: 0;
+  -moz-box-shadow: 1px 1px 2px 0px #ccc;
+  -webkit-box-shadow: 1px 1px 2px 0px #ccc;
+  box-shadow: 1px 1px 2px 0px #ccc;
+}
+
 section {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 section img {
   width: 100%;
   height: auto;
+}
+section.navigation {
+  position: fixed;
+  padding-top: 0;
+  z-index: 5;
+}
+section.navigation .navbar-nav > li {
+  float: none;
+}
+section.navigation .navbar-nav > li > a {
+  padding-left: 0;
+}
+section.banner {
+  background-image: url(../images/banner1.png);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+@media (min-width: 992px) {
+  section.banner {
+    min-height: 900px;
+    background-size: cover;
+  }
+}
+section#design {
+  background-color: #eee;
+}
+section#about .contact p {
+  text-align: center;
+}
+section#about .contact p.icon {
+  width: 100%;
+  margin: 1.5em 0;
+}
+section#about .contact p.icon a {
+  padding: 12px 14px;
+  background-color: #d3c3b4;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 1.5em;
+}
+section#about .contact p.icon a:hover {
+  padding: 14.4px 16.8px;
+  border-radius: 30px;
+}
+section#blog {
+  background-color: #eee;
+}
+
+#isotope-container, #isotope-container-2 {
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  #isotope-container, #isotope-container-2 {
+    margin-right: -15px;
+  }
+}
+@media (min-width: 992px) {
+  #isotope-container, #isotope-container-2 {
+    margin-right: -20px;
+  }
 }
 
 .col1, .col2 {
@@ -139,15 +211,10 @@ section img {
 @media (min-width: 992px) {
   .col1, .col2 {
     width: 33.33333333%;
+    padding: 0 20px 20px 0;
   }
 }
 
-@media (min-width: 768px) {
-  .col2 {
-    width: 50%;
-    padding: 0 15px 15px 0;
-  }
-}
 @media (min-width: 992px) {
   .col2 {
     width: 66.666666666%;

@@ -19,6 +19,7 @@ $text-color: #464646;
 $link-color: #6f6cc4;
 $link-hover-color: #bfbdff;
 $text-margin: 1em;
+$primary-color: #d3c3b4;
 
 * {
 	margin: 0;
@@ -115,20 +116,100 @@ h2:last-child {
 }
 
 footer {
-	background-color:#5e5f5c;
+	background-color:$primary-color;
 	color:#FFF;	
 	padding:10px 0;
 	
 }
 
+.navbar-default {
+	background-color: rgba(248, 248, 248, 0.8);
+	border: none;
+	border-radius: 0;
+	-moz-box-shadow:    1px 1px 2px 0px #ccc;
+  -webkit-box-shadow: 1px 1px 2px 0px #ccc;
+  box-shadow:         1px 1px 2px 0px #ccc;		
+}
+
+
+
 section {
-	padding:20px 0;
+	padding:30px 0;
 	img {
 		width: 100%;
 		height: auto;
 	}
+	&.navigation {
+		position: fixed;
+		padding-top: 0;
+		z-index: 5;
+		.navbar-nav {
+			>li{
+				float: none;
+				>a {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+	&.banner{
+		background-image: url(../images/banner1.png);
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 600px;
+		
+		@include breakpoint(desktop){
+			min-height: 900px;
+			background-size: cover;
+		}
+	}
+	&#illustration{
+		
+	}
+	&#design{
+		background-color: #eee;
+	}
+	&#about{
+		.contact{
+			p {
+				text-align: center;
+				&.icon {
+					width: 100%;
+					margin: 1.5em 0;
+					a {
+						padding: 12px 14px;
+						background-color: $primary-color;
+						border-radius: 24px;
+						color: #fff;
+						font-size: 1.5em;
+					}
+					a:hover{
+						padding: 14.4px 16.8px;
+						border-radius: 30px;
+					}
+				}	
+			}
+		}
+	}
+	&#blog{
+		background-color: #eee;
+	}
 }
 
+$gutter-desktop: 20px;
+$gutter-tablet: 15px;
+
+#isotope-container, #isotope-container-2 {
+	padding: 20px 0;
+	@include breakpoint(tablet){
+		margin-right: -1 * $gutter-tablet;
+	}
+	@include breakpoint(desktop){
+		margin-right: -1 * $gutter-desktop;
+	}
+}
 
 .col1{
 	min-height: 1px;
@@ -139,19 +220,16 @@ section {
 	clear: both;
 	@include breakpoint(tablet){
 		width: 50%;
-		padding: 0 15px 15px 0;
+		padding: 0 $gutter-tablet $gutter-tablet 0;
 	}
 	@include breakpoint(desktop){
 		width: 33.33333333%;
+		padding: 0 $gutter-desktop $gutter-desktop 0;
 	}
 
 }
 .col2{
 	@extend .col1;
-	@include breakpoint(tablet){
-		width: 50%;
-		padding: 0 15px 15px 0;
-	}
 	@include breakpoint(desktop){
 		width: 66.666666666%;
 	}	
