@@ -13,10 +13,10 @@ body {
 }
 
 a {
-  color: #6f6cc4;
+  color: #464646;
 }
 a:hover {
-  color: #bfbdff;
+  color: #94897f;
   text-decoration: none;
 }
 
@@ -108,6 +108,12 @@ h2:last-child {
   margin-bottom: 0;
 }
 
+h2 {
+  color: #94897f;
+  margin: 1em 0 1em 0;
+  font-size: 2.2em;
+}
+
 footer {
   background-color: #d3c3b4;
   color: #FFF;
@@ -117,10 +123,10 @@ footer {
 .navbar-default {
   background-color: rgba(248, 248, 248, 0.8);
   border: none;
-  border-radius: 0;
   -moz-box-shadow: 1px 1px 2px 0px #ccc;
   -webkit-box-shadow: 1px 1px 2px 0px #ccc;
   box-shadow: 1px 1px 2px 0px #ccc;
+  margin: 15px;
 }
 
 section {
@@ -132,7 +138,7 @@ section img {
 }
 section.navigation {
   position: fixed;
-  padding-top: 0;
+  padding: 0;
   z-index: 5;
 }
 section.navigation .navbar-nav > li {
@@ -155,8 +161,14 @@ section.banner {
     background-size: cover;
   }
 }
+section#illustration {
+  background-color: #dddddd;
+}
 section#design {
-  background-color: #eee;
+  background-color: white;
+}
+section#about {
+  background-color: #dddddd;
 }
 section#about .contact p {
   text-align: center;
@@ -177,7 +189,7 @@ section#about .contact p.icon a:hover {
   border-radius: 30px;
 }
 section#blog {
-  background-color: #eee;
+  background-color: white;
 }
 
 #isotope-container, #isotope-container-2 {
@@ -199,8 +211,6 @@ section#blog {
   box-sizing: border-box;
   width: 100%;
   padding-bottom: 15px;
-  float: left;
-  clear: both;
 }
 @media (min-width: 768px) {
   .col1, .col2 {
@@ -218,6 +228,34 @@ section#blog {
 @media (min-width: 992px) {
   .col2 {
     width: 66.666666666%;
+  }
+}
+
+.blog-box, .blog-box-wide {
+  box-sizing: border-box;
+}
+.blog-box .blog-contents, .blog-box-wide .blog-contents {
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #dddddd;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .blog-box, .blog-box-wide {
+    width: 33.3333333%;
+    padding: 0 15px 15px 0;
+  }
+}
+@media (min-width: 992px) {
+  .blog-box, .blog-box-wide {
+    width: 25%;
+    padding: 0 20px 20px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog-box-wide {
+    width: 50%;
   }
 }
 

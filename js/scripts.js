@@ -1,7 +1,8 @@
 (function ( $ ) {
 	$(window).ready(function(){
 		var $container = $('#isotope-container');
-		var $container2 = $('#isotope-container2')
+		var $container2 = $('#isotope-container2');
+		var $container3 = $('#isotope-container3');
 		
 		$container.imagesLoaded( function(){
 		  $container.isotope({
@@ -18,6 +19,15 @@
 		  	resizeable: 'true',
 		  	//resizesContainer: 'true',
 		  	columnWidth: '.col1'
+		  });
+		});
+		
+		$container3.imagesLoaded( function(){
+		  $container3.isotope({
+		  	itemSelector: '.blog-box, .blog-box-wide',
+		  	resizeable: 'true',
+		  	//resizesContainer: 'true',
+		  	columnWidth: '.blog-box'
 		  });
 		});
 			

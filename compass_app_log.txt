@@ -223,3 +223,44 @@
 2014-03-20 14:20:51 overwrite css/style.css 
 2014-03-20 14:21:02 overwrite css/style.css 
 2014-03-20 14:21:50 overwrite css/style.css 
+2014-03-21 09:56:44 overwrite css/style.css 
+2014-03-21 09:57:36 overwrite css/style.css 
+2014-03-21 09:58:13 overwrite css/style.css 
+2014-03-21 09:58:44 overwrite css/style.css 
+2014-03-21 09:58:53 overwrite css/style.css 
+2014-03-21 10:01:34 overwrite css/style.css 
+2014-03-21 10:02:43 overwrite css/style.css 
+2014-03-21 17:57:53 overwrite css/style.css 
+2014-03-21 17:58:41 overwrite css/style.css 
+2014-03-21 18:01:59 overwrite css/style.css 
+2014-03-21 18:03:55 overwrite css/style.css 
+2014-03-21 18:07:59     error sass/style.scss (Line 258: Invalid CSS after "	@extend .blog-box": expected "}", was "@include breakp...")
+2014-03-21 18:07:59 overwrite css/style.css 
+2014-03-21 18:08:17 overwrite css/style.css 
+2014-03-21 18:09:58 overwrite css/style.css 
+2014-03-21 18:10:03 identical css/style.css 
+2014-03-21 18:15:17 overwrite css/style.css 
+2014-03-21 18:15:29 identical css/style.css 
+2014-03-21 18:16:40 overwrite css/style.css 
+2014-03-21 18:17:27     error sass/style.scss (Line 253: Invalid CSS after "...gutter-tablet 0": expected ";", was ".blog-contents {")
+2014-03-21 18:17:27 overwrite css/style.css 
+2014-03-21 18:17:39 overwrite css/style.css 
+2014-03-21 18:18:37 overwrite css/style.css 
+2014-03-21 18:22:47 overwrite css/style.css 
+2014-03-21 18:24:15     error sass/style.scss (Line 177: Undefined variable: "$background-dark".)
+2014-03-21 18:24:15 overwrite css/style.css 
+2014-03-21 18:24:25     error sass/style.scss (Line 177: Undefined variable: "$background-dark".)
+2014-03-21 18:24:25 identical css/style.css 
+2014-03-21 18:24:43 overwrite css/style.css 
+2014-03-21 18:34:38     error sass/style.scss (Line 20: Invalid CSS after "$link-hover-color": expected selector or at-rule, was ": #bfbdff;")
+2014-03-21 18:34:38 overwrite css/style.css 
+2014-03-21 18:34:47 overwrite css/style.css 
+2014-03-21 18:35:24 overwrite css/style.css 
+2014-03-21 18:36:02 overwrite css/style.css 
+2014-03-21 18:36:57 overwrite css/style.css 
+2014-03-21 18:43:59 overwrite css/style.css 
+2014-03-21 18:45:16 overwrite css/style.css 
+2014-03-21 18:45:45 overwrite css/style.css 
+2014-03-21 18:46:34 overwrite css/style.css 
+2014-03-21 18:47:49 overwrite css/style.css 
+2014-03-21 18:47:58 overwrite css/style.css 
