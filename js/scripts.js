@@ -34,7 +34,7 @@
 	});
 	
 	$(document).ready(function(){
-		$("nav, .arrow-overlay").hmcAnimateToAnchor( {bufferTop : 0, bufferTopMobile : 0, breakpoint : 1} );
+		$("nav, footer").hmcAnimateToAnchor( {bufferTop : 0, bufferTopMobile : 0, breakpoint : 1} );
 		
 		if (window.outerWidth <= 992) {
 			initAppear();
