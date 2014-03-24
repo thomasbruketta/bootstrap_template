@@ -34,17 +34,21 @@
 	});
 	
 	$(document).ready(function(){
+		
+		//Animate to anchor tags
 		$("nav, footer").hmcAnimateToAnchor( {bufferTop : 0, bufferTopMobile : 0, breakpoint : 1} );
 		
+		//Show bottom nav after user scrolls past first section
 		if (window.outerWidth <= 992) {
 			initAppear();
 		}
-
+		
+		//Popover google map
+		$('#location-btn').popover({html : true});
 		
 	});
 
 	function initAppear() {
-		//console.log("You are inside the appear function!");
 		$('#illustrations').waypoint(function(direction){
 			if (direction == "down") {
 				$(".fade-in").fadeIn(500);
