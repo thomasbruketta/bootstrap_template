@@ -34,9 +34,29 @@
 	});
 	
 	$(document).ready(function(){
-		$("nav").hmcAnimateToAnchor( {bufferTop : 0, bufferTopMobile : 0, breakpoint : 1} );
+		$("nav, .arrow-overlay").hmcAnimateToAnchor( {bufferTop : 0, bufferTopMobile : 0, breakpoint : 1} );
+		
+		if (window.outerWidth <= 992) {
+			initAppear();
+		}
+
+		
 	});
 
+	function initAppear() {
+		//console.log("You are inside the appear function!");
+		$('#illustrations').waypoint(function(direction){
+			if (direction == "down") {
+				$(".fade-in").fadeIn(500);
+			}
+			else {
+				$(".fade-in").fadeOut(500);
+			}
+			
+		});
+	};
+	
+	
 	/*
 	Harmonic Animate to Anchor jQuery Plugin 
 	Version: 1.0.2
